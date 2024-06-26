@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "codesplain"
+version = "0.1.0"
+description = "Explain your code with an LLM."
+authors = ["Arthur Ryzhak <ryzhakar@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+treeverse = "^0.1.0"
+anthropic = "^0.29.2"
+pydantic = "^2.7.4"
+PyYAML = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
