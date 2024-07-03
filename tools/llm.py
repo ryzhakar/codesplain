@@ -4,13 +4,15 @@ from treeverse import FileNode
 import re
 from itertools import chain
 
-# _MODEL = "claude-3-5-sonnet-20240620"
-_MODEL = "claude-3-haiku-20240307"
+_NEW_SONNET = "claude-3-5-sonnet-20240620"
+_OLD_SONNET = 'claude-3-sonnet-20240229'
+_HAIKU = "claude-3-haiku-20240307"
 _TEMP = 0.1
 _TOKENS = 3000
 _NEWLINE = '\n'
 
 client = anthropic.Anthropic(max_retries=10)
+_MODEL = _OLD_SONNET
 
 with open('prompts/inductive_analysis.md', 'r') as apromptfile:
     analysis_prompt = apromptfile.read()
