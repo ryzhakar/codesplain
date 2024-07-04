@@ -30,6 +30,7 @@ Perform a highly technical, inductive analysis of a single programming file of u
 - Cite specific code entities for each technical observation
 - Strive to include several instances of each technical statement type, if applicable
 - Assign a sentiment indicator to each statement, reflecting the technical impact or quality of the observed feature
+- Provide a truthful representation of the code's technical aspects, regardless of whether the outcome is predominantly positive, negative, or neutral
 
 # Instructions
 1. If not specified, infer the programming language from the file contents.
@@ -56,7 +57,7 @@ Perform a highly technical, inductive analysis of a single programming file of u
     - Use (+) for positive aspects that contribute to code quality, performance, or security
     - Use (−) for negative aspects that may introduce problems, inefficiencies, or vulnerabilities
     - Use (=) for neutral observations or those with unclear impact
-13. Provide a truthful representation of the code's technical aspects, regardless of whether the outcome is predominantly positive, negative, or neutral.
+13. Focus on providing a truthful representation of the code's technical aspects, regardless of the resulting distribution of positive, negative, or neutral statements.
 14. Provide as many statements as necessary to thoroughly analyze the file, typically ranging from 20 to 50 depending on the file's complexity and size.
 
 # Output Format
